@@ -32,11 +32,13 @@ describe('TutorialPage', () => {
     app.storage.create();
   });
   it('should create the tutorial page', () => {
+    // @ts-ignore
     expect(app).toBeTruthy();
   });
 
   it('should check the tutorial status', async () => {
     const didTuts = await app.storage.get('ion_did_tutorial');
+    // @ts-ignore
     expect(didTuts).toBeFalsy();
   });
 });

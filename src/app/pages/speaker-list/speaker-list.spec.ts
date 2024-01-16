@@ -34,6 +34,7 @@ describe('SpeakerListPage', () => {
     app = fixture.debugElement.componentInstance;
   });
   it('should create the speaker list page', () => {
+    // @ts-ignore
     expect(app).toBeTruthy();
   });
 });

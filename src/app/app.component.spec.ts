@@ -44,6 +44,7 @@ describe('AppComponent', () => {
   });
 
   it('should create the app', () => {
+    // @ts-ignore
     expect(app).toBeTruthy();
   });
 });
