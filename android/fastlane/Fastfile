@@ -11,9 +11,9 @@ platform :android do
         "android.injected.version.name" => 'bug fix',
       }
     )
-    #sh("mkdir", "../#{outputFolder}")
-    #dest = "#{outputFolder}/#1011_#1120_#CAP_android.aab"
-    #sh("cp", lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH], '../'+dest)
+    sh("mkdir", "../#{outputFolder}")
+    dest = "#{outputFolder}/test_app.aab"
+    sh("cp", lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH], '../'+dest)
     #destApk = "#{outputFolder}/#1011_#1120_#CAP_android.apk"
     #fastlane_require 'dotenv'
     #Dotenv.overload '../../.env'
